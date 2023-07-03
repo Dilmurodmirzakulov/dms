@@ -1,0 +1,9 @@
+.wu-main-section {
+  padding: 7.5rem 0;
+}
+
+.wu-main-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
