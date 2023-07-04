@@ -36,6 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2.5rem;
 }
 
 .wu-doc-card {
@@ -45,6 +46,7 @@
   max-width: 800px;
   border: 1px solid #000;
   border-bottom: 0;
+  padding: 1.5rem 0;
 }
 
 .wu-doc-card:nth-last-child(1) {
@@ -54,5 +56,39 @@
 .wu-doc-select,
 .wu-doc-title,
 .wu-doc-date {
-  padding: 2rem;
+  padding: 0 2rem;
 }
+
+.wu-doc-date {
+  width: 10rem;
+  text-align: center;
+}
+
+.wu-doc-title {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.wu-local-section {
+  padding: 2.5rem 0;
+  overflow-y: auto;
+  align-items: flex-start;
+}
+
+.wu-pagination .pagination {
+  width: max-content;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .wu-doc-card {
+    flex-direction: column;
+  }
+
+  .wu-doc-title {
+    padding: 1rem;
+    border: 0;
+    text-align: center;
+  }
+}
+
