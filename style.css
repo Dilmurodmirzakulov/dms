@@ -24,7 +24,7 @@
   justify-content: center; /*Hor*/
   text-decoration: none;
   color: black;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .wu-main-btn:hover {
@@ -40,6 +40,19 @@
 
 .wu-doc-card {
   display: flex;
-  max-width: 800px;
+  align-items: center;
   justify-content: space-between;
+  max-width: 800px;
+  border: 1px solid #000;
+  border-bottom: 0;
+}
+
+.wu-doc-card:nth-last-child(1) {
+  border-bottom: 1px solid #000;
+}
+
+.wu-doc-select,
+.wu-doc-title,
+.wu-doc-date {
+  padding: 2rem;
 }
