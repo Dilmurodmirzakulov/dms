@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #4d4d4d;
+}
+
 .wu-main-section {
   padding: 7.5rem 0;
 }
@@ -15,7 +19,7 @@
 }
 
 .wu-main-btn {
-  border: 1px solid #000;
+  border: 1px solid var(--primary-color);
   margin-bottom: 2.5rem;
   width: 8rem;
   height: 4rem;
@@ -23,7 +27,7 @@
   align-items: center; /*Ver*/
   justify-content: center; /*Hor*/
   text-decoration: none;
-  color: black;
+  color: var(--primary-color);
   transition: all 0.3s;
 }
 
@@ -44,13 +48,14 @@
   align-items: center;
   justify-content: space-between;
   max-width: 800px;
-  border: 1px solid #000;
+  width: 100%;
+  border: 1px solid var(--primary-color);
   border-bottom: 0;
   padding: 1.5rem 0;
 }
 
 .wu-doc-card:nth-last-child(1) {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .wu-doc-select,
@@ -65,8 +70,9 @@
 }
 
 .wu-doc-title {
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+  width: 100%;
 }
 
 .wu-local-section {
@@ -81,19 +87,109 @@
 }
 
 .wu-back-btn {
-  border: 1px solid #000;
-  color: #000;
-  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.4rem 1.5rem;
   display: block;
   width: max-content;
-  margin-bottom: 2rem;
   text-decoration: none;
   transition: all 0.3s;
+  align-items: center;
+  display: flex;
 }
 
 .wu-back-btn:hover {
-  background-color: #000;
+  background-color: var(--primary-color);
   color: #fff;
+}
+
+.wu-header-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.wu-header-btns .input-group {
+  width: max-content;
+}
+
+.wu-header-btns .input-group .btn {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.wu-header-btns .input-group .btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.form-control {
+  border-radius: 0;
+  border-color: var(--primary-color);
+}
+
+.wu-create-tab-content .form-control {
+  margin-bottom: 2.5rem;
+}
+
+.wu-header-btns .input-group .form-control {
+  max-width: 20rem;
+}
+
+.wu-signature-owner,
+.wu-signature-status,
+.signature-status,
+.wu-signature-date,
+.wu-signature-reminder {
+  padding: 0 1.5rem;
+}
+
+.wu-create-doc-tabs {
+  justify-content: space-between;
+  border: none;
+  margin-bottom: 2.5rem;
+}
+
+.wu-create-doc-tabs .nav-item {
+  display: flex;
+  width: 48%;
+}
+
+.wu-create-doc-tabs .nav-item .nav-link {
+  padding: 0.5rem 2rem;
+  border-radius: 0;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  width: 100%;
+}
+
+.wu-create-doc-tabs .nav-item .nav-link.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.wu-create-tab-content {
+  max-width: 50rem;
+  margin: auto;
+}
+
+.wu-submit {
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+  display: block;
+  margin-left: auto;
+}
+
+.wu-submit:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.wu-navbar {
+  box-shadow: 0px 15px 10px -15px rgba(99, 99, 99, 0.2);
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 
 @media screen and (max-width: 768px) {
