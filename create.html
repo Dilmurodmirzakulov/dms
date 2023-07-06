@@ -38,47 +38,50 @@
       </div>
     </nav>
   </header>
-  <section class="wu-main-section wu-local-section">
-    <div class="container">
-      <div class="wu-header-btns">
-        <a href="#" class="wu-back-btn"><i class="fa-solid fa-chevron-left"></i></a>
-        <div class="input-group">
-          <button class="btn btn-outline-secondary dropdown-toggle rounded-0" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">Role</button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Approver</a></li>
-            <li><a class="dropdown-item" href="#">Signaturer</a></li>
-            <li><a class="dropdown-item" href="#">Task executer</a></li>
-          </ul>
-          <input type="text" class="form-control" placeholder="Search...">
-          <button class="btn btn-outline-secondary rounded-0" type="button" id="inputGroupFileAddon04">
-            <i class="fa-solid fa-user-plus"></i>
-          </button>
+  <main>
+    <section class="wu-main-section wu-local-section">
+      <div class="container">
+        <div class="wu-header-btns">
+          <a href="#" class="wu-back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+          <div class="input-group">
+            <button class="btn btn-outline-secondary dropdown-toggle rounded-0" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Role</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Approver</a></li>
+              <li><a class="dropdown-item" href="#">Signaturer</a></li>
+              <li><a class="dropdown-item" href="#">Task executer</a></li>
+            </ul>
+            <input type="text" class="form-control" placeholder="Search...">
+            <button class="btn btn-outline-secondary rounded-0" type="button" id="inputGroupFileAddon04">
+              <i class="fa-solid fa-user-plus"></i>
+            </button>
+          </div>
         </div>
+        <ul class="nav nav-tabs wu-create-doc-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="attach-tab" data-bs-toggle="tab" data-bs-target="#attach-tab-pane"
+              type="button" role="tab" aria-controls="attach-tab-pane" aria-selected="true">Attach</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="write-own-tab" data-bs-toggle="tab" data-bs-target="#write-own-tab-pane"
+              type="button" role="tab" aria-controls="write-own-tab-pane" aria-selected="false">Write own</button>
+          </li>
+        </ul>
+        <div class="tab-content wu-create-tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="attach-tab-pane" role="tabpanel" aria-labelledby="attach-tab"
+            tabindex="0">
+            <input type="file" name="" id="">
+          </div>
+          <div class="tab-pane fade" id="write-own-tab-pane" role="tabpanel" aria-labelledby="write-own-tab"
+            tabindex="0">
+            <input type="text" class="form-control" placeholder="Template" name="" id="">
+            <textarea name="" id="" class="form-control" placeholder="Template" rows="10"></textarea>
+          </div>
+        </div>
+        <button class="btn wu-submit">Submit</button>
       </div>
-      <ul class="nav nav-tabs wu-create-doc-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="attach-tab" data-bs-toggle="tab" data-bs-target="#attach-tab-pane"
-            type="button" role="tab" aria-controls="attach-tab-pane" aria-selected="true">Attach</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="write-own-tab" data-bs-toggle="tab" data-bs-target="#write-own-tab-pane"
-            type="button" role="tab" aria-controls="write-own-tab-pane" aria-selected="false">Write own</button>
-        </li>
-      </ul>
-      <div class="tab-content wu-create-tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="attach-tab-pane" role="tabpanel" aria-labelledby="attach-tab"
-          tabindex="0">
-          <input type="file" name="" id="">
-        </div>
-        <div class="tab-pane fade" id="write-own-tab-pane" role="tabpanel" aria-labelledby="write-own-tab" tabindex="0">
-          <input type="text" class="form-control" placeholder="Template" name="" id="">
-          <textarea name="" id="" class="form-control" placeholder="Template" rows="10"></textarea>
-        </div>
-      </div>
-      <button class="btn wu-submit">Submit</button>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Mobile Tabs -->
   <div class="mobile-nav d-lg-none">

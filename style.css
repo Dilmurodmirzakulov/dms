@@ -1,5 +1,17 @@
 :root {
-  --primary-color: #4d4d4d;
+  --primary-color: #303644;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.navbar-brand {
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 1.25rem;
 }
 
 .wu-main-section {
@@ -13,7 +25,7 @@
 }
 
 .wu-main-section {
-  height: calc(100vh - 57px);
+  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -47,7 +59,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 800px;
   width: 100%;
   border: 1px solid var(--primary-color);
   border-bottom: 0;
@@ -177,16 +188,16 @@
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   width: 100%;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .wu-create-doc-tabs .nav-item .nav-link:hover {
   background-color: var(--primary-color);
   color: #fff;
-  opacity: .75;
+  opacity: 0.75;
 }
 
-.wu-create-doc-tabs .nav-item .nav-link.active:hover{
+.wu-create-doc-tabs .nav-item .nav-link.active:hover {
   opacity: 1;
 }
 
@@ -213,6 +224,18 @@
 .wu-submit:hover {
   background-color: var(--primary-color);
   color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+}
+
+main {
+  padding-top: 57px;
 }
 
 .wu-navbar {
@@ -289,7 +312,8 @@
   color: var(--primary-color);
 }
 
-.wu-pagination .page-item .page-link:hover, .wu-pagination .page-item .page-link:active {
+.wu-pagination .page-item .page-link:hover,
+.wu-pagination .page-item .page-link:active {
   background-color: var(--primary-color);
   color: #fff;
 }
@@ -302,7 +326,6 @@
   color: var(--primary-color);
 }
 
-
 /* The checkbox container */
 .wu-checkbox-container {
   display: block;
@@ -314,6 +337,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  min-height: 25px;
 }
 
 /* Hide the browser's default checkbox */
